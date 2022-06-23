@@ -6,11 +6,12 @@
 /*   By: lfarias- <lfarias-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/21 08:44:26 by lfarias-          #+#    #+#             */
-/*   Updated: 2022/06/23 12:23:26 by lfarias-         ###   ########.fr       */
+/*   Updated: 2022/06/23 12:44:32 by lfarias-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdlib.h>
 
 char	*ft_hexstr(unsigned long long n, char hexcase)
 {

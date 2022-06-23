@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,13 +6,12 @@
 /*   By: lfarias- <lfarias-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 10:05:39 by lfarias-          #+#    #+#             */
-/*   Updated: 2022/06/21 16:57:04 by lfarias-         ###   ########.fr       */
+/*   Updated: 2022/06/23 12:44:01 by lfarias-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# include <stdlib.h>
 
 int			ft_printf(const char *str, ...);
 char		*ft_utoa(unsigned int n);

@@ -6,16 +6,15 @@
 /*   By: lfarias- <lfarias-@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 10:02:28 by lfarias-          #+#    #+#             */
-/*   Updated: 2022/06/23 12:18:42 by lfarias-         ###   ########.fr       */
+/*   Updated: 2022/06/23 12:46:15 by lfarias-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdarg.h>
 #include "ft_printf.h"
 #include "libft/libft.h"
-#include <stdio.h>
 
-char	*ft_ctostr(char c)
+static char	*ft_ctostr(char c)
 {
 	char	*str;
 
@@ -25,7 +24,7 @@ char	*ft_ctostr(char c)
 	return (str);
 }
 
-char	*get_conv_value(char fmt_chr, va_list lst)
+static char	*get_conv_value(char fmt_chr, va_list lst)
 {
 	char	*value;
 
@@ -54,7 +53,7 @@ char	*get_conv_value(char fmt_chr, va_list lst)
 	return (value);
 }
 
-void	print_value(char *fvalue, char fmt_chr, int *size)
+static void	print_value(char *fvalue, char fmt_chr, int *size)
 {
 	if (fvalue[0] == '\0' && fmt_chr == 'c')
 	{

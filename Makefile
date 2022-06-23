@@ -6,7 +6,7 @@
 #    By: lfarias- <lfarias-@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/21 18:31:24 by lfarias-          #+#    #+#              #
-#    Updated: 2022/06/23 12:14:38 by lfarias-         ###   ########.fr        #
+#    Updated: 2022/06/23 13:16:30 by lfarias-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,11 +26,14 @@ $(NAME):
 all: $(NAME)
 
 clean:
+	make -C $(LIBFT_DIR) clean
 	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)
-
-bonus: $(NAME)
+	rm -f $(LIBFT_DIR)libft.a
 
 re: fclean all
+
+.PHONY:
+	all clean fclean re
